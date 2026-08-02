@@ -18,6 +18,9 @@ Aminkia takes any YouTube video and gives you **10 AI-powered tools** to learn f
 
 **No API keys. No extra costs. Works on Claude Code CLI and Claude.ai Web.**
 
+> 🌐 **Watch a video in English. Get the output in German. Or French. Or Spanish.**
+> Aminkia separates the video language from the output language — you choose.
+
 ---
 
 ## Who is it for?
@@ -141,7 +144,7 @@ CLI if you want a fully automated experience (paste URL → get output). Web if 
 Any public YouTube video with captions enabled (~80% of videos). CLI users: for the remaining 20%, use the local video option with Whisper transcription.
 
 **What languages are supported?**
-Italian and English by default. Output language matches the transcript language.
+Any language Claude knows — which is basically all of them. At startup Aminkia asks you which language you want the output in. Watch a video in English, get the output in German. Watch in Japanese, get the output in Italian. The video language and the output language are completely independent.
 
 **Can I use it on my own videos?**
 Yes — CLI version only. Choose option 2 at startup and provide the file path. Works with MP4, MOV, AVI and most common formats.

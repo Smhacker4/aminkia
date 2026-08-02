@@ -195,20 +195,20 @@ Mostra il menu:
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
   📘 LEARN
-   1  ⚡  Sintetizza        TL;DR + punti chiave + capitoli
-   2  📝  Appunti           Bullet points strutturati
-   3  🎯  Quiz              8 domande con risposta
+   1  ⚡  Summarize         TL;DR + key points + chapters (in OUTPUT_LANGUAGE)
+   2  📝  Notes             Structured bullet points (in OUTPUT_LANGUAGE)
+   3  🎯  Quiz              8 questions with answers (in OUTPUT_LANGUAGE)
 
   ✍️  CREATE
-   4  💼  LinkedIn Post     Hook + insight + CTA professionale
-   5  𝕏   Thread X          7 tweet collegati
-   6  📧  Newsletter        Blocco pronto da incollare
-   7  🎙️  Script Replica    Riscrive il video come script tuo
+   4  💼  LinkedIn Post     Hook + insights + CTA (in OUTPUT_LANGUAGE)
+   5  𝕏   Thread X          7-tweet thread (in OUTPUT_LANGUAGE)
+   6  📧  Newsletter        Ready-to-paste block (in OUTPUT_LANGUAGE)
+   7  🎙️  Script Replica    Rewrite as your own script (in OUTPUT_LANGUAGE)
 
   🎬 AI VIDEO
-   8  🤖  Higgsfield Copy   Prompt per generare video AI
-   9  🔥  Hook Generator    5 hook virali per TikTok/Reels
-  10  ✂️  Clip Finder       Top 5 momenti clippabili + timestamp
+   8  🤖  Higgsfield Copy   AI video prompts in English (always)
+   9  🔥  Hook Generator    5 viral hooks for TikTok/Reels (in OUTPUT_LANGUAGE)
+  10  ✂️  Clip Finder       Top 5 clippable moments + timestamps (in OUTPUT_LANGUAGE)
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 Scrivi il numero (1-10) o 'tutte' per eseguire tutto:
@@ -322,20 +322,20 @@ Dopo ogni output mostra SEMPRE il menu completo e poi chiedi:
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
   📘 LEARN
-   1  ⚡  Sintetizza        TL;DR + punti chiave + capitoli
-   2  📝  Appunti           Bullet points strutturati
-   3  🎯  Quiz              8 domande con risposta
+   1  ⚡  Summarize         TL;DR + key points + chapters (in OUTPUT_LANGUAGE)
+   2  📝  Notes             Structured bullet points (in OUTPUT_LANGUAGE)
+   3  🎯  Quiz              8 questions with answers (in OUTPUT_LANGUAGE)
 
   ✍️  CREATE
-   4  💼  LinkedIn Post     Hook + insight + CTA professionale
-   5  𝕏   Thread X          7 tweet collegati
-   6  📧  Newsletter        Blocco pronto da incollare
-   7  🎙️  Script Replica    Riscrive il video come script tuo
+   4  💼  LinkedIn Post     Hook + insights + CTA (in OUTPUT_LANGUAGE)
+   5  𝕏   Thread X          7-tweet thread (in OUTPUT_LANGUAGE)
+   6  📧  Newsletter        Ready-to-paste block (in OUTPUT_LANGUAGE)
+   7  🎙️  Script Replica    Rewrite as your own script (in OUTPUT_LANGUAGE)
 
   🎬 AI VIDEO
-   8  🤖  Higgsfield Copy   Prompt per generare video AI
-   9  🔥  Hook Generator    5 hook virali per TikTok/Reels
-  10  ✂️  Clip Finder       Top 5 momenti clippabili + timestamp
+   8  🤖  Higgsfield Copy   AI video prompts in English (always)
+   9  🔥  Hook Generator    5 viral hooks for TikTok/Reels (in OUTPUT_LANGUAGE)
+  10  ✂️  Clip Finder       Top 5 clippable moments + timestamps (in OUTPUT_LANGUAGE)
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 Scrivi il numero (1-10) o 'no' per uscire:
@@ -352,20 +352,20 @@ Se risponde qualsiasi altra cosa → rimosta il menu completo:
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
   📘 LEARN
-   1  ⚡  Sintetizza        TL;DR + punti chiave + capitoli
-   2  📝  Appunti           Bullet points strutturati
-   3  🎯  Quiz              8 domande con risposta
+   1  ⚡  Summarize         TL;DR + key points + chapters (in OUTPUT_LANGUAGE)
+   2  📝  Notes             Structured bullet points (in OUTPUT_LANGUAGE)
+   3  🎯  Quiz              8 questions with answers (in OUTPUT_LANGUAGE)
 
   ✍️  CREATE
-   4  💼  LinkedIn Post     Hook + insight + CTA professionale
-   5  𝕏   Thread X          7 tweet collegati
-   6  📧  Newsletter        Blocco pronto da incollare
-   7  🎙️  Script Replica    Riscrive il video come script tuo
+   4  💼  LinkedIn Post     Hook + insights + CTA (in OUTPUT_LANGUAGE)
+   5  𝕏   Thread X          7-tweet thread (in OUTPUT_LANGUAGE)
+   6  📧  Newsletter        Ready-to-paste block (in OUTPUT_LANGUAGE)
+   7  🎙️  Script Replica    Rewrite as your own script (in OUTPUT_LANGUAGE)
 
   🎬 AI VIDEO
-   8  🤖  Higgsfield Copy   Prompt per generare video AI
-   9  🔥  Hook Generator    5 hook virali per TikTok/Reels
-  10  ✂️  Clip Finder       Top 5 momenti clippabili + timestamp
+   8  🤖  Higgsfield Copy   AI video prompts in English (always)
+   9  🔥  Hook Generator    5 viral hooks for TikTok/Reels (in OUTPUT_LANGUAGE)
+  10  ✂️  Clip Finder       Top 5 clippable moments + timestamps (in OUTPUT_LANGUAGE)
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 Scrivi il numero (1-10) o 'no' per uscire:

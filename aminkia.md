@@ -22,17 +22,32 @@ Stampa direttamente questo testo (NON usare bash, scrivilo tu come output):
 
 ---
 
-## STEP 2 — Scegli sorgente
+## STEP 2 — Lingua output
 
 Chiedi all'utente:
 
 ```
-Cosa vuoi analizzare?
+🌐 In which language do you want the output?
+(e.g. English, Italiano, Deutsch, Français, Español...)
+Press Enter to auto-detect from the video language.
+```
 
-  1. 🎬  URL YouTube
-  2. 📁  Video sul mio computer
+Salva la lingua scelta come OUTPUT_LANGUAGE. Usala per TUTTI gli output delle funzioni F1-F10.
+Se l'utente preme Invio o non risponde → usa la lingua del transcript (auto-detect).
 
-Scrivi 1 o 2:
+---
+
+## STEP 3 — Scegli sorgente
+
+Chiedi all'utente:
+
+```
+What do you want to analyze?
+
+  1. 🎬  YouTube URL
+  2. 📁  Video on my computer
+
+Type 1 or 2:
 ```
 
 Attendi la risposta e vai al branch corretto.
@@ -371,5 +386,5 @@ Dopo ogni output mostra SEMPRE questo menu compatto prima di chiedere:
 
 - Il transcript viene salvato in `/tmp/` e rimane disponibile per tutta la sessione
 - Se il video è molto lungo (>1 ora), usa solo i primi 15.000 caratteri del testo per l'elaborazione
-- Per video in italiano, il transcript sarà in italiano → output in italiano
-- Per video in inglese → chiedi all'utente la lingua preferita per l'output
+- OUTPUT_LANGUAGE viene chiesta all'inizio e applicata a tutti gli output F1-F10, indipendentemente dalla lingua del transcript
+- Se l'utente non specifica la lingua → auto-detect dalla lingua del transcript

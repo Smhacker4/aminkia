@@ -56,7 +56,7 @@ Attendi la risposta e vai al branch corretto.
 
 ## STEP 3A — Sorgente: URL YouTube
 
-Chiedi: `Incolla l'URL del video YouTube:`
+Ask: `Paste the YouTube video URL:`
 
 Una volta ricevuto l'URL:
 
@@ -114,7 +114,7 @@ Se output inizia con `ERROR:` → mostra l'errore all'utente e chiedi un altro U
 
 Se output inizia con `OK:N` → mostra:
 ```
-✅ Transcript caricato — ~N parole
+✅ Transcript loaded — ~N words
 ```
 
 Leggi il transcript: `Read /tmp/aminkia_transcript.txt`
@@ -123,7 +123,7 @@ Leggi il transcript: `Read /tmp/aminkia_transcript.txt`
 
 ## STEP 3B — Sorgente: Video locale
 
-Chiedi: `Incolla il percorso del video (es. C:\Users\Carmelo\Desktop\video.mp4):`
+Ask: `Paste the video path (e.g. C:\Users\Carmelo\Desktop\video.mp4):`
 
 Converti il percorso Windows in WSL:
 - `C:\Users\Carmelo\Desktop\video.mp4` → `/mnt/c/Users/Carmelo/Desktop/video.mp4`
@@ -136,11 +136,11 @@ python3 -c "import whisper; print('OK')" 2>/dev/null || echo "MISSING"
 
 Se `MISSING`, chiedi all'utente:
 ```
-Whisper non è installato. È necessario per trascrivere video locali.
-Vuoi installarlo ora? (richiede ~1GB di download la prima volta)
+Whisper is not installed. It is required to transcribe local videos.
+Do you want to install it now? (requires ~1GB download the first time)
 
-  1. Sì, installa
-  2. No, usa un URL YouTube invece
+  1. Yes, install
+  2. No, use a YouTube URL instead
 ```
 
 Se sì:
@@ -157,7 +157,7 @@ import whisper, os
 video_path = "PERCORSO_VIDEO_QUI"
 model = whisper.load_model("base")
 
-print("⏳ Trascrizione in corso (può richiedere qualche minuto)...")
+print("⏳ Transcription in progress (this may take a few minutes)...")
 result = model.transcribe(video_path, language=None, verbose=False)
 
 # Salva con timestamp
@@ -180,7 +180,7 @@ Sostituisci `PERCORSO_VIDEO_QUI` con il percorso WSL del video.
 
 Se output `OK:N` → mostra:
 ```
-✅ Trascrizione completata — ~N parole
+✅ Transcription complete — ~N words
 ```
 
 ---
@@ -191,7 +191,7 @@ Mostra il menu:
 
 ```
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  COSA VUOI FARE CON QUESTO VIDEO?
+  WHAT DO YOU WANT TO DO WITH THIS VIDEO?
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
   📘 LEARN
@@ -211,7 +211,7 @@ Mostra il menu:
   10  ✂️  Clip Finder       Top 5 clippable moments + timestamps (in OUTPUT_LANGUAGE)
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-Scrivi il numero (1-10) o 'tutte' per eseguire tutto:
+Type a number (1-10) or 'all' to run everything:
 ```
 
 ---
@@ -307,8 +307,8 @@ Identifica i 5 momenti più clippabili usando i timestamp del transcript.
 
 ---
 
-### Opzione 'tutte'
-Esegui F1, F4, F9, F10 in sequenza (le più utili). Separa ogni output con `━━━━━━━━━━`.
+### Option 'all'
+Run F1, F4, F9, F10 in sequence (the most useful). Separate each output with `━━━━━━━━━━`.
 
 ---
 
@@ -318,7 +318,7 @@ Dopo ogni output mostra SEMPRE il menu completo e poi chiedi:
 
 ```
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  COSA VUOI FARE CON QUESTO VIDEO?
+  WHAT DO YOU WANT TO DO WITH THIS VIDEO?
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
   📘 LEARN
@@ -338,7 +338,7 @@ Dopo ogni output mostra SEMPRE il menu completo e poi chiedi:
   10  ✂️  Clip Finder       Top 5 clippable moments + timestamps (in OUTPUT_LANGUAGE)
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-Scrivi il numero (1-10) o 'no' per uscire:
+Type a number (1-10) or 'no' to exit:
 ```
 
 Se risponde con un numero → torna al STEP 5.
@@ -348,7 +348,7 @@ Se risponde qualsiasi altra cosa → rimosta il menu completo:
 
 ```
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  COSA VUOI FARE CON QUESTO VIDEO?
+  WHAT DO YOU WANT TO DO WITH THIS VIDEO?
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
   📘 LEARN
@@ -368,15 +368,15 @@ Se risponde qualsiasi altra cosa → rimosta il menu completo:
   10  ✂️  Clip Finder       Top 5 clippable moments + timestamps (in OUTPUT_LANGUAGE)
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-Scrivi il numero (1-10) o 'no' per uscire:
+Type a number (1-10) or 'no' to exit:
 ```
 
 Dopo ogni output mostra SEMPRE questo menu compatto prima di chiedere:
 
 ```
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  Grazie per aver usato AMINKIA 🎬
-  github.com/tuousername/aminkia
+  Thank you for using AMINKIA 🎬
+  github.com/Smhacker4/aminkia
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 ```
 

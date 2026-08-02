@@ -2,9 +2,10 @@
   <img src="aminkia_logo.jpg" alt="Aminkia" width="400"/>
   
   <h3>Turn any YouTube video into content, insights & AI prompts</h3>
-  <p>A free Claude Code skill — no API keys, no subscriptions, no setup.</p>
+  <p>Free · No API keys · No subscriptions · Works on Claude Code CLI and Claude.ai Web</p>
 
-  <img src="https://img.shields.io/badge/Claude_Code-skill-blue?style=flat-square" />
+  <img src="https://img.shields.io/badge/Claude_Code-CLI-blue?style=flat-square" />
+  <img src="https://img.shields.io/badge/Claude.ai-Web-7B5CF6?style=flat-square" />
   <img src="https://img.shields.io/badge/license-MIT-green?style=flat-square" />
   <img src="https://img.shields.io/badge/cost-free-brightgreen?style=flat-square" />
 </div>
@@ -13,9 +14,9 @@
 
 ## What is Aminkia?
 
-Aminkia is a **Claude Code skill** that takes any YouTube video (or a video on your computer), extracts the transcript, and gives you **10 AI-powered tools** to learn faster, create content, and generate AI video prompts — all inside Claude Code, using your existing Pro subscription.
+Aminkia takes any YouTube video and gives you **10 AI-powered tools** to learn faster, create content, and generate AI video prompts — using your existing Claude Pro subscription.
 
-**No API keys. No extra costs. Just paste a YouTube link and go.**
+**No API keys. No extra costs. Works on Claude Code CLI and Claude.ai Web.**
 
 ---
 
@@ -85,22 +86,19 @@ Once the transcript is loaded, choose what you need. Three categories: **Learn**
 
 ## Installation
 
-**One command:**
+### Option A — Claude Code CLI (recommended)
+Automatic transcript download. Supports YouTube URLs and local video files.
 
 ```bash
 curl -o ~/.claude/skills/aminkia.md https://raw.githubusercontent.com/Smhacker4/aminkia/main/aminkia.md
 ```
 
-That's it. Open Claude Code and type:
-
+Open Claude Code and type:
 ```
 /aminkia
 ```
 
----
-
-## Requirements
-
+**Requirements:**
 - [Claude Code](https://claude.ai/code) with a Pro subscription
 - Python 3 (pre-installed on most systems)
 - `youtube-transcript-api` — installed automatically on first run
@@ -108,19 +106,45 @@ That's it. Open Claude Code and type:
 
 ---
 
+### Option B — Claude.ai Web (zero setup)
+Works directly in your browser. No installation needed — just copy and paste the transcript manually.
+
+**Setup (one time, 2 minutes):**
+1. Go to [claude.ai](https://claude.ai) → **Projects** → **New Project**
+2. Name it `AMINKIA`
+3. Click **"Set project instructions"**
+4. Copy the content of [`aminkia-project.md`](aminkia-project.md) and paste it
+5. Save
+
+**How to get the YouTube transcript:**
+1. Open any YouTube video
+2. Click the **3 dots menu** (···) below the video
+3. Select **"Show transcript"**
+4. Select all → Copy → Paste into the chat
+
+Then choose one of the 10 functions and you're done.
+
+**Requirements:**
+- Claude.ai account with a Pro subscription (free tier may have limits)
+
+---
+
 ## FAQ
 
 **Does it cost anything?**
-No. Aminkia runs inside Claude Code using your existing Pro plan. No API keys, no extra charges.
+No. Aminkia uses your existing Claude Pro subscription. No API keys, no extra charges.
+
+**CLI or Web — which should I use?**
+CLI if you want a fully automated experience (paste URL → get output). Web if you just want to try it instantly with zero setup.
 
 **What videos work?**
-Any public YouTube video with captions enabled (~80% of videos). For the remaining 20%, use the local video option with Whisper transcription.
+Any public YouTube video with captions enabled (~80% of videos). CLI users: for the remaining 20%, use the local video option with Whisper transcription.
 
 **What languages are supported?**
 Italian and English by default. Output language matches the transcript language.
 
 **Can I use it on my own videos?**
-Yes — choose option 2 at startup and provide the file path. Works with MP4, MOV, AVI and most common formats.
+Yes — CLI version only. Choose option 2 at startup and provide the file path. Works with MP4, MOV, AVI and most common formats.
 
 ---
 
